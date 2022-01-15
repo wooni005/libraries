@@ -28,7 +28,7 @@ depends on.
 
 Build the tests using the provided `Makefile`:
 
-		$ make
+    $ make
 
 This will create a set of executables in `./bin/`. Run each of these executables to test the corresponding functionality. 
 
@@ -53,7 +53,7 @@ test case is built, uploaded and then the tests run.
 
 The test suite _does not_ run an MQTT server - it is assumed to be running already.
  
-		$ python testsuite.py
+    $ python testsuite.py
 
 A summary of activity is printed to the console. More comprehensive logs are written
 to the `logs` directory.
@@ -83,8 +83,8 @@ The file `testcases/settings.py` is used to config the test environment.
 Before each sketch is compiled, these values are automatically substituted in. To
 do this, the suite looks for lines that _start_ with the following:
 
-		 byte server[] = {
-		 byte ip[] = {
+     byte server[] = {
+     byte ip[] = {
 
 and replaces them with the appropriate values.
 

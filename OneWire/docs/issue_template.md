@@ -9,7 +9,7 @@ ESP32: www.esp32.com
 Adafruit Feather/Metro/Trinket: forums.adafruit.com
 Particle Photon: community.particle.io
 
-If you are experiencing trouble but not certain of the cause, or need help using this code, ask on the appropriate forum.	This is not the place to ask for support or help, even directly related to this code.	Only use this form you are certain you have discovered a defect in this code!
+If you are experiencing trouble but not certain of the cause, or need help using this code, ask on the appropriate forum.  This is not the place to ask for support or help, even directly related to this code.  Only use this form you are certain you have discovered a defect in this code!
 
 Please verify the problem occurs when using the very latest version, using the newest version of Arduino and any other related software.
 
@@ -59,6 +59,6 @@ void loop() {
 
 ### Errors or Incorrect Output
 
-If you see any errors or incorrect output, please show it here.	Please use copy & paste to give an exact copy of the message.	Details matter, so please show (not merely describe) the actual message or error exactly as it appears.
+If you see any errors or incorrect output, please show it here.  Please use copy & paste to give an exact copy of the message.  Details matter, so please show (not merely describe) the actual message or error exactly as it appears.
 
 

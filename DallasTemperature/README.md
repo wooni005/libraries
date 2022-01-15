@@ -16,6 +16,11 @@ You will need a pull-up resistor of about 5 KOhm between the 1-Wire data line
 and your 5V power. If you are using the DS18B20, ground pins 1 and 3. The
 centre pin is the data line '1-wire'.
 
+In case of temperature conversion problems (result is `-85`), strong pull-up setup may be necessary. See section 
+_Powering the DS18B20_ in 
+[DS18B20 datasheet](https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf) (page 7)
+and use `DallasTemperature(OneWire*, uint8_t)` constructor.
+
 We have included a "REQUIRESNEW" and "REQUIRESALARMS" definition. If you 
 want to slim down the code feel free to use either of these by including
 
@@ -40,7 +45,7 @@ Miles Burton <miles@mnetcs.com> originally developed this library.
 Tim Newsome <nuisance@casualhacker.net> added support for multiple sensors on
 the same bus.
 Guil Barros [gfbarros@bappos.com] added getTempByAddress (v3.5)
-	 Note: these are implemented as getTempC(address) and getTempF(address)
+   Note: these are implemented as getTempC(address) and getTempF(address)
 Rob Tillaart [rob.tillaart@gmail.com] added async modus (v3.7.0)
 
 
@@ -59,9 +64,9 @@ version 2.1 of the License, or (at your option) any later version.
 
 This library is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	See the GNU
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 Lesser General Public License for more details.
 
 You should have received a copy of the GNU Lesser General Public
 License along with this library; if not, write to the Free Software
-Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA	02110-1301	USA
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA

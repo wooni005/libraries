@@ -8,7 +8,7 @@ void bddtest_end();
 int bddtest_summary();
 
 #define SUITE(x) { bddtest_suite(x); }
-#define TEST(x) { if (!bddtest_test(__FILE__, __LINE__, #x, (x))) return false;	}
+#define TEST(x) { if (!bddtest_test(__FILE__, __LINE__, #x, (x))) return false;  }
 
 #define IT(x) { bddtest_start(x); }
 #define END_IT { bddtest_end();return true;}
